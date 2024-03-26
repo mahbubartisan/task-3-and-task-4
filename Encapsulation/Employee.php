@@ -32,18 +32,4 @@ class Employee
     }
 }
 
-// Example usage
-try {
-    $employee1 = new Employee("Mahbub", 50000);
-    echo "Employee: " . $employee1->getName() . "\n";
-    echo "Current Salary: $" . $employee1->getSalary() . "\n";
 
-    // Attempt to set negative salary (will throw an exception)
-    $employee1->setSalary(-1000);
-
-    // Set new salary
-    $employee1->setSalary(55000);
-    echo "New Salary: $" . $employee1->getSalary() . "\n";
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage();
-}
